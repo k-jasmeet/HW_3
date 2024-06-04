@@ -1,0 +1,40 @@
+<!--
+file: index.html
+GUI Assignment: HW3 creating an interactive table
+Jasmeet Kaur, UMass Lowell Computer Science, jasmeet_kaur@student.uml.edu
+Copyright (c) 2024 by Jasmeet. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Dynamic Table</h1>
+    <p>Please enter your ranges below. Negative numbers are acceptable too!</p>
+    <form id="multiplicationForm">
+        <label for="startHorizontal">Start of horizontal here:</label>
+        <input type="number" id="startHorizontal" name="startHorizontal" required>
+        <label for="endHorizontal">End of horizontal here:</label>
+        <input type="number" id="endHorizontal" name="endHorizontal" required>
+        <label for="startVertical">Start of vertical here:</label>
+        <input type="number" id="startVertical" name="startVertical" required>
+        <label for="endVertical">End of vertical here:</label>
+        <input type="number" id="endVertical" name="endVertical" required>
+        <div class="button-container">
+            <button type="submit">Generate Table!</button>
+        </div>
+    </form>
+    <div id="error-message" class="error"></div>
+    <div class="table-container">
+        <div class="table-wrapper">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
